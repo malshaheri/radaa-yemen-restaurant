@@ -278,15 +278,12 @@ export default function Home() {
               Route starten
             </a>
           </div>
-
-          <div className="mt-10 text-sm text-white/50">
-            Tiergartenstraße 124 · 69120 Heidelberg · +49 173 8911970
-          </div>
         </div>
+
         <a
           href="#about"
           aria-label="Zum nächsten Abschnitt"
-          className="absolute bottom-20 left-1/2 flex h-11 w-11 -translate-x-1/2 items-center justify-center rounded-full border border-[#d8ad61]/50 bg-[#140c08]/80 text-[#d8ad61] transition-all duration-300 hover:-translate-y-1 hover:border-[#f0d28b] hover:text-[#f0d28b] hover:shadow-[0_0_18px_rgba(216,173,97,0.20)]"
+          className="absolute bottom-12 left-1/2 flex h-11 w-11 -translate-x-1/2 items-center justify-center rounded-full border border-[#d8ad61]/50 bg-[#140c08]/80 text-[#d8ad61] transition-all duration-300 hover:-translate-y-1 hover:border-[#f0d28b] hover:text-[#f0d28b] hover:shadow-[0_0_18px_rgba(216,173,97,0.20)]"
         >
           <FaChevronDown size={20} />
         </a>
