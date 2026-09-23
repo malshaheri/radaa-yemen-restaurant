@@ -18,11 +18,11 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "Sana'a Yemen Restaurant Heidelberg",
+  title: "Yemeni Restaurant Template | Next.js Demo",
   description:
-    "Authentische jemenitische Küche in Heidelberg. Traditionelle Gerichte, originale Gewürze und herzliche jemenitische Gastfreundschaft.",
+    "Reusable bilingual Yemeni restaurant website template built with Next.js, TypeScript and Tailwind CSS.",
   icons: {
-    icon: "/images/sanaa-logo.jpg",
+    icon: "/images/yemeni-pattern.png",
   },
 };
 
