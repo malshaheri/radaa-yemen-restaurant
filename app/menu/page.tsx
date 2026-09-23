@@ -9,18 +9,18 @@ export default function MenuPage() {
         <div className="text-center">
           <div className="mx-auto flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-[#0e0906]">
             <img
-              src="/images/sanaa-logo.jpg"
-              alt="Sana'a Yemen Restaurant Logo"
+              src="/images/yemeni-pattern.png"
+              alt="Yemeni Restaurant Demo"
               className="h-full w-full object-contain"
             />
           </div>
 
           <p className="mt-5 text-sm uppercase tracking-[0.3em] text-[#d8ad61]">
-            Sana&apos;a Yemen Restaurant
+            Yemeni Restaurant Demo
           </p>
 
           <p dir="rtl" className="mt-2 text-base text-[#f0d28b]">
-            مطعم صنعاء اليمن
+            نموذج مطعم يمني
           </p>
 
           <h1 className="mt-4 text-4xl font-bold md:text-6xl">
@@ -102,12 +102,11 @@ export default function MenuPage() {
         {/* Bottom */}
         <div className="mt-20 border-t border-[#d8ad61]/20 pt-10 text-center">
           <p className="text-sm text-white/45">
-            Sana&apos;a Yemen Restaurant · Tiergartenstraße 124 · 69120
-            Heidelberg
+            Yemeni Restaurant Demo · Musterstraße 1 · 12345 Musterstadt
           </p>
 
           <p dir="rtl" className="mt-2 text-sm text-white/35">
-            مطعم صنعاء اليمن · هايدلبرغ
+            نموذج مطعم يمني · نموذج تجريبي
           </p>
 
           <a
