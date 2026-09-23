@@ -1,8 +1,12 @@
-# Yemeni Restaurant Template
+# Radaa Yemen Restaurant
 
-A reusable bilingual restaurant website template for Yemeni restaurants, built with **Next.js**, **TypeScript** and **Tailwind CSS**.
+A modern bilingual restaurant website for **Radaa Yemen Restaurant**, built with **Next.js**, **React**, **TypeScript** and **Tailwind CSS**.
 
-The project started as a restaurant website concept and was later generalized into a portfolio-ready template that can be adapted for different Yemeni restaurants without tying the codebase to one specific business.
+The project is designed as a polished portfolio demo and a reusable starting point for future Yemeni restaurant websites.
+
+## Live Demo
+
+https://radaa-yemen-restaurant.vercel.app/
 
 ## Features
 
@@ -12,8 +16,9 @@ The project started as a restaurant website concept and was later generalized in
 - Opening-hours status
 - Contact and location sections
 - Mobile navigation
-- Yemeni-inspired visual identity and decorative patterns
+- Yemeni-inspired visual identity
 - SEO metadata with Next.js
+- Optimized images with `next/image`
 - Reusable structure for future restaurant clients
 
 ## Tech Stack
@@ -22,11 +27,15 @@ The project started as a restaurant website concept and was later generalized in
 - React 19
 - TypeScript
 - Tailwind CSS 4
-- React Icons / Lucide React
+- React Icons
+- Lucide React
+- Vercel
 
-## Customization
+## Demo & Customization
 
-The demo business name, address, contact details, opening hours and menu content are placeholders and can be replaced for a real restaurant deployment.
+The current demo uses the fictional brand **Radaa Yemen Restaurant**.
+
+Restaurant name, address, contact details, opening hours, menu content, branding and location can be customized for a real restaurant deployment.
 
 ## Getting Started
 
@@ -35,21 +44,27 @@ npm install
 npm run dev
 ```
 
-Then open `http://localhost:3000`.
+Then open:
+
+```text
+http://localhost:3000
+```
 
 For a production check:
 
 ```bash
+npm run lint
 npm run build
 npm start
 ```
 
 ## Purpose
 
-This repository is maintained as a reusable portfolio project and starting point for future Yemeni restaurant websites.
+This repository is maintained as a portfolio project and reusable foundation for future restaurant websites.
 
 ## Author
 
-Mohammed Alshaheri  
+**Mohammed Alshaheri**
+
 Portfolio: https://malshaheri.de  
 GitHub: https://github.com/malshaheri
