@@ -1,5 +1,6 @@
 import { menu } from "@/data/menu";
-
+import Link from "next/link";
+import Image from "next/image";
 import {
   FaInstagram,
   FaTiktok,
@@ -135,31 +136,30 @@ export default function Home() {
       <header className="absolute left-0 top-0 z-50 w-full border-b border-white/10 bg-[#140c08]/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#140c08]">
-              <img
-                src="/images/yemeni-pattern.png"
-                alt="Yemeni Restaurant Demo"
+              <Image
+                src="/images/ryr-logo.png"
+                alt="Radaa Yemen Restaurant"
                 className="h-full w-full object-contain"
               />
             </div>
 
             <div className="leading-tight">
               <span className="block text-xl font-bold text-[#d8ad61]">
-                Yemeni Restaurant
+                Radaa Yemen
               </span>
 
               <span className="text-xs tracking-[0.2em] text-white/60">
                 RESTAURANT
               </span>
             </div>
-          </a>
-
+          </Link>
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 text-sm md:flex">
-            <a href="/" className="text-[#d8ad61]">
+            <Link href="/" className="text-[#d8ad61]">
               Startseite
-            </a>
+            </Link>
 
             <a href="/menu" className="transition hover:text-[#d8ad61]">
               Speisekarte
@@ -180,7 +180,7 @@ export default function Home() {
               href="#contact"
               className="rounded-md bg-[#d8ad61] px-4 py-2 text-sm font-semibold text-[#140c08] transition hover:bg-[#f0d28b]"
             >
-              Demo Contact
+              Kontakt{" "}
             </a>
           </div>
 
@@ -198,12 +198,12 @@ export default function Home() {
 
             <div className="absolute right-0 top-14 w-64 overflow-hidden rounded-xl border border-[#d8ad61]/25 bg-[#140c08]/95 shadow-2xl backdrop-blur-xl">
               <nav className="flex flex-col p-2 text-sm">
-                <a
+                <Link
                   href="/"
                   className="rounded-lg px-4 py-3 font-semibold text-[#d8ad61] transition hover:bg-white/5"
                 >
                   Startseite
-                </a>
+                </Link>
 
                 <a
                   href="/menu"
@@ -232,7 +232,7 @@ export default function Home() {
                   href="#contact"
                   className="m-2 rounded-lg bg-[#d8ad61] px-4 py-3 text-center font-semibold text-[#140c08] transition hover:bg-[#f0d28b]"
                 >
-                  Demo Contact
+                  Kontakt{" "}
                 </a>
               </nav>
             </div>
@@ -242,12 +242,14 @@ export default function Home() {
       <section className="relative flex min-h-screen items-center justify-center px-6 text-center">
         <div>
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-[#d8ad61]">
-            Yemeni Restaurant Restaurant
+            Radaa Yemen Restaurant
           </p>
 
           <h1 className="text-4xl font-bold leading-tight md:text-7xl">
             Authentische jemenitische Küche
-            <span className="block text-[#d8ad61]">für Ihr Restaurant</span>
+            <span className="block text-[#d8ad61]">
+              Tradition, die man schmeckt
+            </span>
           </h1>
 
           <p
@@ -270,13 +272,15 @@ export default function Home() {
               Speisekarte ansehen
             </a>
 
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Musterstraße+1+12345+Musterstadt"
-              target="_blank"
-              className="rounded-lg border border-[#d8ad61] px-6 py-3 font-semibold text-[#f0d28b] transition hover:bg-[#d8ad61]/10"
+            <button
+              type="button"
+              disabled
+              aria-disabled="true"
+              title="Standort noch nicht hinterlegt"
+              className="cursor-not-allowed rounded-lg border border-[#d8ad61]/50 px-6 py-3 font-semibold text-[#f0d28b]/60 opacity-70"
             >
               Route starten
-            </a>
+            </button>
           </div>
         </div>
 
@@ -296,9 +300,9 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
           {/* الصورة */}
           <div className="group overflow-hidden rounded-2xl border border-[#d8ad61]/20 transition-all duration-500 hover:border-[#d8ad61]/50 hover:shadow-[0_18px_45px_rgba(216,173,97,0.10)]">
-            <img
-              src="/images/restaurant.jpg"
-              alt="Innenbereich des Yemeni Restaurant Demos für Ihr Restaurant"
+            <Image
+              src="/images/restaurant1.png"
+              alt="Traditionelle jemenitische Küche im Radaa Yemen Restaurant"
               className="h-full min-h-[360px] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
           </div>
@@ -331,7 +335,7 @@ export default function Home() {
 
             <h2 className="mt-4 text-4xl font-bold leading-tight md:text-5xl">
               Ein Stück Yemen
-              <span className="block text-[#d8ad61]">mitten für Ihr Restaurant</span>
+              <span className="block text-[#d8ad61]">auf Ihrem Teller</span>
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/65">
@@ -344,8 +348,8 @@ export default function Home() {
               dir="rtl"
               className="mx-auto mt-6 max-w-2xl text-center text-xl leading-10 text-[#f0d28b]"
             >
-              نرحب بكم في نموذج مطعم يمني قابل للتخصيص، حيث نكهة المطبخ اليمني الأصيل
-              وأجواء الضيافة اليمنية.
+              مرحباً بكم في مطعم رداع اليمن، حيث تجتمع نكهة المطبخ اليمني الأصيل
+              مع كرم الضيافة اليمنية.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -361,7 +365,7 @@ export default function Home() {
               </span>
 
               <span className="rounded-full border border-[#d8ad61]/30 px-4 py-2 text-sm text-white/70 transition hover:border-[#d8ad61]/60 hover:text-[#f0d28b]">
-                Demo
+                Authentischer Geschmack
               </span>
             </div>
           </div>
@@ -533,19 +537,22 @@ export default function Home() {
               </p>
 
               <p className="mt-4 leading-7 text-white/70">
-                Musterstraße 1
-                <br />
-                12345 Musterstadt
+                Standort nach Vereinbarung
               </p>
 
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Musterstraße+1+12345+Musterstadt"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-block rounded-lg border border-[#d8ad61] px-5 py-3 font-semibold text-[#f0d28b] transition-all duration-300 hover:-translate-y-1 hover:bg-[#d8ad61] hover:text-[#140c08]"
+              <p dir="rtl" className="mt-2 text-sm text-white/50">
+                الموقع قابل للتخصيص
+              </p>
+
+              <button
+                type="button"
+                disabled
+                aria-disabled="true"
+                title="Kein Standort hinterlegt"
+                className="mt-6 cursor-not-allowed rounded-lg border border-[#d8ad61]/50 px-5 py-3 font-semibold text-[#f0d28b]/60 opacity-70"
               >
                 Route starten
-              </a>
+              </button>
             </div>
 
             {/* Öffnungszeiten */}
@@ -634,13 +641,13 @@ export default function Home() {
                 تواصلوا معنا مباشرة
               </p>
 
-              <a
-                href="#contact"
-                className="mt-5 block text-2xl font-bold text-[#f0d28b] transition-colors duration-300 hover:text-[#d8ad61]"
-              >
-                Demo Contact
-              </a>
+              <p className="mt-5 text-xl font-bold text-[#f0d28b]">
+                Kontakt auf Anfrage
+              </p>
 
+              <p dir="rtl" className="mt-2 text-sm text-white/55">
+                بيانات التواصل قابلة للتخصيص
+              </p>
               <div className="mt-6 flex items-center justify-center gap-3">
                 <a
                   href="#contact"
@@ -669,15 +676,26 @@ export default function Home() {
       <section className="bg-[#140c08] px-6 pb-20">
         <div className="mx-auto max-w-7xl">
           <div className="overflow-hidden rounded-2xl border border-[#d8ad61]/20">
-            <iframe
-              title="Yemeni Restaurant Demo"
-              src="https://www.google.com/maps?q=Musterstraße+1,+12345+Musterstadt&output=embed"
-              width="100%"
-              height="420"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="block w-full"
-            />
+            <div className="flex h-[420px] w-full flex-col items-center justify-center bg-[#0e0906] px-6 text-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#d8ad61]/40 text-3xl text-[#d8ad61]">
+                📍
+              </div>
+
+              <h3 className="mt-5 text-xl font-bold text-[#f0d28b]">
+                Google Maps Standort
+              </h3>
+
+              <p className="mt-2 max-w-md text-sm leading-6 text-white/50">
+                Die Karte wird mit dem Standort des Restaurants verbunden.
+              </p>
+
+              <p
+                dir="rtl"
+                className="mt-2 max-w-md text-sm leading-6 text-[#d8ad61]/70"
+              >
+                يتم ربط الخريطة بموقع المطعم عند تخصيص الموقع
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -699,25 +717,25 @@ export default function Home() {
             </div>
 
             <p className="font-semibold text-[#f0d28b]">
-              Yemeni Restaurant Restaurant
+              Radaa Yemen Restaurant
             </p>
 
             <p dir="rtl" className="mt-1 text-sm text-[#f0d28b]/80">
-              مطعم صنعاء اليمن
+              مطعم رداع اليمن
             </p>
 
             <p className="mt-2 text-sm text-white/50">
-              Authentische jemenitische Küche für Ihr Restaurant
+              Authentische jemenitische Küche
             </p>
 
             <p dir="rtl" className="mt-1 text-sm text-white/40">
-              نكهة يمنية أصيلة في هايدلبرغ
+              نكهة اليمن الأصيلة
             </p>
           </div>
 
           {/* الجهة اليمنى */}
           <div className="text-center text-sm text-white/40">
-            <p>© 2026 Yemeni Restaurant Restaurant. Alle Rechte vorbehalten.</p>
+            <p>© 2026 Radaa Yemen Restaurant. Alle Rechte vorbehalten.</p>
 
             <p dir="rtl" className="mt-1">
               جميع الحقوق محفوظة

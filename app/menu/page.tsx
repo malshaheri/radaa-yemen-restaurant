@@ -1,6 +1,7 @@
 import { menu } from "@/data/menu";
 import SabaeanDivider from "@/components/SabaeanDivider";
-
+import Link from "next/link";
+import Image from "next/image";
 export default function MenuPage() {
   return (
     <main className="min-h-screen bg-[#140c08] px-6 py-16 text-white">
@@ -8,19 +9,19 @@ export default function MenuPage() {
         {/* Header */}
         <div className="text-center">
           <div className="mx-auto flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-[#0e0906]">
-            <img
-              src="/images/yemeni-pattern.png"
-              alt="Yemeni Restaurant Demo"
+            <Image
+              src="/images/ryr-logo.png"
+              alt="Radaa Yemen Restaurant"
               className="h-full w-full object-contain"
             />
           </div>
 
           <p className="mt-5 text-sm uppercase tracking-[0.3em] text-[#d8ad61]">
-            Yemeni Restaurant Demo
+            Radaa Yemen Restaurant
           </p>
 
           <p dir="rtl" className="mt-2 text-base text-[#f0d28b]">
-            نموذج مطعم يمني
+            مطعم رداع اليمن
           </p>
 
           <h1 className="mt-4 text-4xl font-bold md:text-6xl">
@@ -44,12 +45,12 @@ export default function MenuPage() {
           </p>
 
           <div className="mt-8">
-            <a
+            <Link
               href="/"
               className="inline-flex items-center justify-center rounded-lg border border-[#d8ad61]/60 px-6 py-3 text-sm font-semibold text-[#f0d28b] transition hover:bg-[#d8ad61] hover:text-[#140c08]"
             >
               Zurück zur Startseite
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -102,19 +103,19 @@ export default function MenuPage() {
         {/* Bottom */}
         <div className="mt-20 border-t border-[#d8ad61]/20 pt-10 text-center">
           <p className="text-sm text-white/45">
-            Yemeni Restaurant Demo · Musterstraße 1 · 12345 Musterstadt
+            Radaa Yemen Restaurant · Authentic Yemeni Cuisine
           </p>
 
           <p dir="rtl" className="mt-2 text-sm text-white/35">
-            نموذج مطعم يمني · نموذج تجريبي
+            مطعم رداع اليمن · نكهة اليمن الأصيلة
           </p>
 
-          <a
+          <Link
             href="/"
             className="mt-6 inline-flex items-center justify-center rounded-lg border border-[#d8ad61] px-7 py-3 font-semibold text-[#f0d28b] transition hover:bg-[#d8ad61] hover:text-[#140c08]"
           >
             Zurück zur Startseite
-          </a>
+          </Link>
         </div>
       </div>
     </main>

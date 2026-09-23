@@ -18,11 +18,11 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "Yemeni Restaurant Template | Next.js Demo",
+  title: "Radaa Yemen Restaurant | Authentische jemenitische Küche",
   description:
-    "Reusable bilingual Yemeni restaurant website template built with Next.js, TypeScript and Tailwind CSS.",
+    "Radaa Yemen Restaurant – authentische jemenitische Küche, traditionelle Gerichte und herzliche Gastfreundschaft.",
   icons: {
-    icon: "/images/yemeni-pattern.png",
+    icon: "/images/ryr-logo.png",
   },
 };
 
