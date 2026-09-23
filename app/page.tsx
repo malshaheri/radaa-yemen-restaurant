@@ -138,15 +138,15 @@ export default function Home() {
           <a href="/" className="flex items-center gap-3">
             <div className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#140c08]">
               <img
-                src="/images/sanaa-logo.jpg"
-                alt="Sana'a Yemen Restaurant Logo"
+                src="/images/yemeni-pattern.png"
+                alt="Yemeni Restaurant Demo"
                 className="h-full w-full object-contain"
               />
             </div>
 
             <div className="leading-tight">
               <span className="block text-xl font-bold text-[#d8ad61]">
-                Sana&apos;a Yemen
+                Yemeni Restaurant
               </span>
 
               <span className="text-xs tracking-[0.2em] text-white/60">
@@ -177,10 +177,10 @@ export default function Home() {
           {/* Desktop Phone */}
           <div className="hidden items-center gap-3 md:flex">
             <a
-              href="tel:+491738911970"
+              href="#contact"
               className="rounded-md bg-[#d8ad61] px-4 py-2 text-sm font-semibold text-[#140c08] transition hover:bg-[#f0d28b]"
             >
-              +49 173 8911970
+              Demo Contact
             </a>
           </div>
 
@@ -229,10 +229,10 @@ export default function Home() {
                 <div className="my-2 h-px bg-[#d8ad61]/15" />
 
                 <a
-                  href="tel:+491738911970"
+                  href="#contact"
                   className="m-2 rounded-lg bg-[#d8ad61] px-4 py-3 text-center font-semibold text-[#140c08] transition hover:bg-[#f0d28b]"
                 >
-                  +49 173 8911970
+                  Demo Contact
                 </a>
               </nav>
             </div>
@@ -242,19 +242,19 @@ export default function Home() {
       <section className="relative flex min-h-screen items-center justify-center px-6 text-center">
         <div>
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-[#d8ad61]">
-            Sana&apos;a Yemen Restaurant
+            Yemeni Restaurant Restaurant
           </p>
 
           <h1 className="text-4xl font-bold leading-tight md:text-7xl">
             Authentische jemenitische Küche
-            <span className="block text-[#d8ad61]">in Heidelberg</span>
+            <span className="block text-[#d8ad61]">für Ihr Restaurant</span>
           </h1>
 
           <p
             dir="rtl"
             className="mt-6 text-3xl font-semibold text-[#f0d28b] md:text-5xl"
           >
-            نكهة اليمن الأصيلة في هايدلبرغ
+            نكهة اليمن الأصيلة
           </p>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/70 md:text-lg">
@@ -271,7 +271,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Tiergartenstraße+124+69120+Heidelberg"
+              href="https://www.google.com/maps/search/?api=1&query=Musterstraße+1+12345+Musterstadt"
               target="_blank"
               className="rounded-lg border border-[#d8ad61] px-6 py-3 font-semibold text-[#f0d28b] transition hover:bg-[#d8ad61]/10"
             >
@@ -298,7 +298,7 @@ export default function Home() {
           <div className="group overflow-hidden rounded-2xl border border-[#d8ad61]/20 transition-all duration-500 hover:border-[#d8ad61]/50 hover:shadow-[0_18px_45px_rgba(216,173,97,0.10)]">
             <img
               src="/images/restaurant.jpg"
-              alt="Innenbereich des Sana'a Yemen Restaurants in Heidelberg"
+              alt="Innenbereich des Yemeni Restaurant Demos für Ihr Restaurant"
               className="h-full min-h-[360px] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
           </div>
@@ -331,7 +331,7 @@ export default function Home() {
 
             <h2 className="mt-4 text-4xl font-bold leading-tight md:text-5xl">
               Ein Stück Yemen
-              <span className="block text-[#d8ad61]">mitten in Heidelberg</span>
+              <span className="block text-[#d8ad61]">mitten für Ihr Restaurant</span>
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/65">
@@ -344,8 +344,8 @@ export default function Home() {
               dir="rtl"
               className="mx-auto mt-6 max-w-2xl text-center text-xl leading-10 text-[#f0d28b]"
             >
-              نرحب بكم في مطعم صنعاء اليمن، حيث نكهة المطبخ اليمني الأصيل وأجواء
-              الضيافة اليمنية في قلب هايدلبرغ.
+              نرحب بكم في نموذج مطعم يمني قابل للتخصيص، حيث نكهة المطبخ اليمني الأصيل
+              وأجواء الضيافة اليمنية.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -361,7 +361,7 @@ export default function Home() {
               </span>
 
               <span className="rounded-full border border-[#d8ad61]/30 px-4 py-2 text-sm text-white/70 transition hover:border-[#d8ad61]/60 hover:text-[#f0d28b]">
-                Heidelberg
+                Demo
               </span>
             </div>
           </div>
@@ -533,13 +533,13 @@ export default function Home() {
               </p>
 
               <p className="mt-4 leading-7 text-white/70">
-                Tiergartenstraße 124
+                Musterstraße 1
                 <br />
-                69120 Heidelberg
+                12345 Musterstadt
               </p>
 
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Tiergartenstraße+124+69120+Heidelberg"
+                href="https://www.google.com/maps/search/?api=1&query=Musterstraße+1+12345+Musterstadt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-block rounded-lg border border-[#d8ad61] px-5 py-3 font-semibold text-[#f0d28b] transition-all duration-300 hover:-translate-y-1 hover:bg-[#d8ad61] hover:text-[#140c08]"
@@ -635,15 +635,15 @@ export default function Home() {
               </p>
 
               <a
-                href="tel:+491738911970"
+                href="#contact"
                 className="mt-5 block text-2xl font-bold text-[#f0d28b] transition-colors duration-300 hover:text-[#d8ad61]"
               >
-                +49 173 8911970
+                Demo Contact
               </a>
 
               <div className="mt-6 flex items-center justify-center gap-3">
                 <a
-                  href="https://www.instagram.com/sanaa.yemen.restaurant/"
+                  href="#contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -653,7 +653,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="https://www.tiktok.com/@sanaa.yemen.resta"
+                  href="#contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="TikTok"
@@ -670,8 +670,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="overflow-hidden rounded-2xl border border-[#d8ad61]/20">
             <iframe
-              title="Sana'a Yemen Restaurant Heidelberg"
-              src="https://www.google.com/maps?q=Tiergartenstraße+124,+69120+Heidelberg&output=embed"
+              title="Yemeni Restaurant Demo"
+              src="https://www.google.com/maps?q=Musterstraße+1,+12345+Musterstadt&output=embed"
               width="100%"
               height="420"
               loading="lazy"
@@ -699,7 +699,7 @@ export default function Home() {
             </div>
 
             <p className="font-semibold text-[#f0d28b]">
-              Sana&apos;a Yemen Restaurant
+              Yemeni Restaurant Restaurant
             </p>
 
             <p dir="rtl" className="mt-1 text-sm text-[#f0d28b]/80">
@@ -707,7 +707,7 @@ export default function Home() {
             </p>
 
             <p className="mt-2 text-sm text-white/50">
-              Authentische jemenitische Küche in Heidelberg
+              Authentische jemenitische Küche für Ihr Restaurant
             </p>
 
             <p dir="rtl" className="mt-1 text-sm text-white/40">
@@ -717,7 +717,7 @@ export default function Home() {
 
           {/* الجهة اليمنى */}
           <div className="text-center text-sm text-white/40">
-            <p>© 2026 Sana&apos;a Yemen Restaurant. Alle Rechte vorbehalten.</p>
+            <p>© 2026 Yemeni Restaurant Restaurant. Alle Rechte vorbehalten.</p>
 
             <p dir="rtl" className="mt-1">
               جميع الحقوق محفوظة
